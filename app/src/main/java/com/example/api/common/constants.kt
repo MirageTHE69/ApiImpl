@@ -1,4 +1,4 @@
-package com.example.common
+package com.example.api.common
 
 object Constants {
 

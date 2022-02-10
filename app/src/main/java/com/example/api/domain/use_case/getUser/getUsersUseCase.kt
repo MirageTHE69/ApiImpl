@@ -1,9 +1,9 @@
-package com.example.domain.use_case.getUser
+package com.example.api.domain.use_case.getUser
 
 import android.util.Log
-import com.example.common.Resource
-import com.example.domain.model.user
-import com.example.domain.repository.UserRepository
+import com.example.api.common.Resource
+import com.example.api.domain.model.user
+import com.example.api.domain.repository.UserRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
@@ -22,7 +22,6 @@ class getUsersUseCase @Inject constructor(
                 emit(Resource.Loading())
                 val user = repository.getUser()
                 emit(Resource.Success(user))
-
 
             }catch (e:HttpException){
 

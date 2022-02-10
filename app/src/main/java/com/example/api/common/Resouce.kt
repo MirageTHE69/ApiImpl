@@ -1,7 +1,7 @@
-package com.example.common
+package com.example.api.common
 
-import com.example.domain.model.create_User_Model
-import com.example.domain.model.user
+import com.example.api.domain.model.create_User_Model
+import com.example.api.domain.model.user
 import retrofit2.HttpException
 import retrofit2.Response
 

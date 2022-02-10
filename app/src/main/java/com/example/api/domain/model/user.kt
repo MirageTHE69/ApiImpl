@@ -1,4 +1,4 @@
-package com.example.domain.model
+package com.example.api.domain.model
 
 data class user(
 

@@ -1,15 +1,15 @@
-package com.example.domain.repository
+package com.example.api.domain.repository
 
-import com.example.domain.model.create_User_Model
-import com.example.domain.model.user
+import com.example.api.domain.model.create_User_Model
+import com.example.api.domain.model.user
 import retrofit2.Response
-import com.example.data.remote.user_api
+import com.example.api.data.remote.user_api
 
 import javax.inject.Inject
 
 class UserRepositoeryImpl @Inject constructor(
     private val userAPI : user_api
-) : UserRepository{
+) : UserRepository {
     override suspend fun getUser(): Response<List<user>>{
         return userAPI.get_user()
     }

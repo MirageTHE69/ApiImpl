@@ -1,7 +1,7 @@
-package com.example.data.remote
+package com.example.api.data.remote
 
-import com.example.domain.model.create_User_Model
-import com.example.domain.model.user
+import com.example.api.domain.model.create_User_Model
+import com.example.api.domain.model.user
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.POST
